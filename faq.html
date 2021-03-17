@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<h2>Frequently Asked Questions</h2>
+
+
+<button class="accordion">Women’s economic empowerment is central to realizing women’s rights and gender equality</button>
+<div class="panel">
+  <p>Women’s economic empowerment includes women’s ability to participate equally in existing markets; their access to and control over productive resources, access to decent work, control over their own time, lives and bodies; and increased voice, agency and meaningful participation in economic decision-making at all levels from the household to international institutions.</p>
+</div>
+
+<button class="accordion">Why should I join WooCare?</button>
+<div class="panel">
+  <p>By joining WooCare, you will have access to world expertise, drive innovation with creative ideas and partnerships, enhance your professional visibility, improve your knowledge on women’s economic empowerment and access resources in the Learning Center. Being a member will enable you to: Connect with other members, Share and download resources, Post comments in the Knowledge Library and Knowledge Circles. You will also benefit from learning opportunities in the Learning Center.</p>
+</div>   
+
+<button class="accordion">How do I get started?</button>
+<div class="panel">
+  <p> To get started and become our community member, please register. Once you have registered, you will receive an email with a verification link.</p>
+</div>
+
+<button class="accordion">How do I share my ideas on women’s economic empowerment with the Empower Women community?</button>
+<div class="panel">
+  <p>Share your ideas in the “Open Ideas and Questions for Women’s Economic Empowerment” Circle. Do you have an idea or concrete experience about how to empower women economically and improve their economic situations? Make your idea an opportunity visible for everyone and get feedback and suggestions to improve your original idea and start to take action in your community. It is your turn to create this opportunity into a reality for women! Our key values are discussions that are inclusive, collaborative and community-driven. </p>
+</div>
+
+<button class="accordion">The signs of relationship abuse and how to help</button>
+<div class="panel">
+  <p>Violence against women is a human rights violation that takes place every single day around the world. Globally, one in three women experiences physical or sexual violence, mostly by an intimate partner. While domestic violence and abuse are sometimes hidden, if we know the signs of an abusive relationship, we may be able to recognize it better and seek or offer help.</p>
+</div>
+<button class="accordion">Types of violence against women and girls</button>
+<div class="panel">
+  <p>Violence against women is one of the world’s most prevalent human rights violations, taking place every day, many times over, in every corner of the globe. This glossary provides an overview of the many forms of violence against women and girls, along with other commonly used terms.</p>
+</div>
+<button class="accordion">Who do I contact for technical matters?</button>
+<div class="panel">
+  <p>Please contact us at empower.women@woocare.org and indicate in email subject line “Technical issue" </p>
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
